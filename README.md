@@ -8,7 +8,7 @@ This project aims to predict mortality in the Intensive Care Unit (ICU) using th
 
 - `cleaned_data.R`: Script for data cleaning and preprocessing. This script processes the raw MIMIC IV data to prepare it for analysis and modeling.
 - `EDA.R`: Script for exploratory data analysis. This includes visualizations and statistical summaries to understand the distribution, relationships, and patterns in the data.
-- `elect_phenotype.R`: Script for defining and working with the phenotype of interest, specifically mortality in the ICU. This script includes feature engineering and selection tailored to predicting mortality.This selection was also based on past studies.
+- `elect_phenotype.R`: Script for defining and working with the phenotype of interest, specifically mortality in the ICU. This script includes feature engineering and selection tailored to predicting mortality. This selection was also based on past studies.
 - `logistic_model.R`: Script for building and evaluating a logistic regression model. This includes model training, validation, and performance metrics.
 - `rf_model.R`: Script for building and evaluating a random forest model. This script includes the setup, training, and evaluation of the random forest classifier.
 - `xgb_model.R`: Script for building and evaluating an XGBoost model. This includes hyperparameter tuning, training, and assessing the model's performance.
@@ -58,6 +58,13 @@ This project aims to predict mortality in the Intensive Care Unit (ICU) using th
     ```
 
 ## Results
+The best-performing model was **XGBoost**, which outperformed logistic regression and random forest regarding AUC. The most useful features for predicting ICU mortality were:
 
+- **Age**
+- **Body Mass Index (BMI)**
+- **White Blood Cell(WBC)**
+
+## Contributions
+Contributions are welcome!! If you have suggestions for improving the code, implementing new models, or refining feature selection, please feel free to submit a pull request or open an issue. If you want to fix bugs, enhance model performance, or learn through collaboration, no problem. Your contributions will help make this project better. **Thanks and Ciao**
 
 
